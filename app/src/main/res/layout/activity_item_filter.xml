@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        tools:context=".activity.ItemFilterActivity">
+
+        <RelativeLayout
+            android:id="@+id/tollbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:src="@drawable/icon_back"></ImageView>
+
+            <TextView
+                style="@style/myTextView"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_toRightOf="@id/imgBack"
+                android:fontFamily="@font/font_arial"
+                android:text="Filter"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/white"></View>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="R/R Ratio"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="Bullish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="Barish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="Volatile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="Non-Volatile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="LBEV"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="UBEV"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:background="#737272"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></Button>
+
+    </LinearLayout>
+</layout>
